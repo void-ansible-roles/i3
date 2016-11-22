@@ -1,8 +1,9 @@
 ---
 - name: Install i3 packages
-  xbps: pkg={{ item }} state=present
-  with_items:
-    - i3
-    - i3status
-    - i3lock
-    - dmenu
+  xbps:
+    pkg:
+      - i3
+      - i3status
+      - i3lock
+      - dmenu
+    state: present
